@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>통합과학 (물리·화학) · Middle School Study</title>
+<style>
+:root{--ink:#17231e;--muted:#68756d;--line:#dfe7df;--paper:#f7f8f4;--card:#fff;--accent:#5a43c5;--accent2:#2f8b72}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;line-height:1.65}
+a{color:inherit}.top{padding:12px 22px;background:#eaf0e5;color:#315d4a;text-decoration:none;display:block}.wrap{max-width:1180px;margin:auto;padding:28px 22px 60px}
+header{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;border-bottom:1px solid var(--line);padding:12px 0 22px}
+.kicker{font-size:12px;letter-spacing:.14em;color:var(--accent);font-weight:800}h1{font-size:clamp(30px,5vw,56px);line-height:1.1;margin:8px 0}h2{font-size:25px;margin:0 0 8px}h3{margin:0 0 6px;font-size:18px}.lead{color:var(--muted);margin:0;max-width:650px}
+.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:1px solid #cfd8cf;background:#fff;border-radius:999px;padding:9px 14px;text-decoration:none;font-weight:700;cursor:pointer}.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:stretch;padding:32px 0}.hero-card{background:linear-gradient(140deg,#efeaff,#f4f1ff);border:1px solid #ded4ff;border-radius:20px;padding:24px;min-height:190px}.hero-card p{margin:6px 0;color:#514a72}.orbit{height:100%;min-height:190px;border-radius:20px;background:radial-gradient(circle at 50% 50%,#ffd983 0 14%,#f09a6b 15% 19%,transparent 20% 34%,#bbb7e7 35% 36%,transparent 37% 57%,#7d68d4 58% 59%,transparent 60%),#211b4d;position:relative;overflow:hidden}.orbit:after{content:"H  He  C  O  Fe";position:absolute;bottom:18px;left:0;right:0;text-align:center;color:#fff8d7;letter-spacing:.22em;font-weight:800}
+.chapter-nav{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:8px 0 28px}.chapter-nav button{text-align:left;min-height:88px;padding:13px;border:1px solid var(--line);background:#fff;border-radius:14px;cursor:pointer;color:var(--ink)}.chapter-nav button.active{border:2px solid var(--accent);box-shadow:0 8px 24px #33207e15}.chapter-nav b{display:block;color:var(--accent);font-size:12px}.chapter-nav small{display:block;color:var(--muted);margin-top:4px}
+.panel{display:none}.panel.active{display:block}.chapter-intro{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-bottom:16px}.chapter-intro p{margin:0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:17px}.card .num{font-size:11px;color:var(--accent);font-weight:800;letter-spacing:.12em}.card p{margin:8px 0 0;color:#4d5c53;font-size:14px}.card strong{display:block;font-size:17px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}.box ul{margin:8px 0 0;padding-left:20px;color:#4d5c53}.pill{display:inline-block;font-size:12px;background:#edf6f1;color:#277158;border-radius:999px;padding:3px 9px;margin:2px}
+.notice{margin:24px 0;padding:17px 19px;border-left:4px solid var(--accent2);background:#edf6f1;border-radius:10px}.notice b{display:block;color:#236a55}
+footer{border-top:1px solid var(--line);margin-top:35px;padding-top:18px;color:var(--muted);font-size:13px}
+@media(max-width:850px){.hero{grid-template-columns:1fr}.chapter-nav{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}}
+@media(max-width:520px){.wrap{padding:18px 14px 40px}.chapter-nav{grid-template-columns:1fr}.grid{grid-template-columns:1fr}header{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<a class="top" href="../index.html">← Middle School Study 통합 학습실</a>
+<div class="wrap">
+<header><div><div class="kicker">ADVANCED PREVIEW · INTEGRATED SCIENCE</div><h1>통합과학 <span style="color:var(--accent)">(물리·화학)</span></h1><p class="lead">중학 개념에서 출발해 고등학교 통합과학으로 이어지는 5개 챕터 복습 노트예요.</p></div><div class="actions"><a class="btn primary" href="https://middle-science-elements.adored-char-7024.chatgpt.site" target="_blank" rel="noopener">전체 대시보드 열기 ↗</a><button class="btn" id="print">인쇄 / PDF</button></div></header>
+<section class="hero"><div class="hero-card"><div class="kicker">TODAY'S SCIENCE DESK</div><h2>원소에서 에너지까지, 한 흐름으로</h2><p>우주의 원소 생성 → 물질의 규칙성 → 역학 시스템 → 화학 변화 → 에너지 전환을 차례로 연결합니다.</p><div style="margin-top:14px"><span class="pill">개념 127개</span><span class="pill">연습·탐구 문제 155개</span><span class="pill">고1 통합과학 선행</span></div></div><div class="orbit" aria-hidden="true"></div></section>
+<nav class="chapter-nav" aria-label="챕터 선택">
+<button class="active" data-panel="c1"><b>CHAPTER 1</b>자연의 구성 원소<small>우주와 지구·생명체</small></button>
+<button data-panel="c2"><b>CHAPTER 2</b>물질의 규칙성과 성질<small>주기성·결합·전기</small></button>
+<button data-panel="c3"><b>CHAPTER 3</b>역학 시스템<small>중력·운동·충돌</small></button>
+<button data-panel="c4"><b>CHAPTER 4</b>화학 변화<small>산화·중화·에너지</small></button>
+<button data-panel="c5"><b>CHAPTER 5</b>에너지 전환과 활용<small>발전·효율·신재생</small></button>
+</nav>
+<main>
+<section id="c1" class="panel active"><div class="chapter-intro"><h2>자연의 구성 원소</h2><p>빅뱅과 별의 진화에서 만들어진 원소가 태양계·지구·생명체로 이어지는 과정을 설명합니다.</p></div><div class="grid">
+<div class="card"><span class="num">01</span><strong>우주의 시작과 원소의 생성</strong><p>빅뱅 직후 수소·헬륨(극소량 리튬)이 먼저 형성되고, 우주가 팽창하며 식었습니다. 수소와 헬륨의 질량비는 약 3:1입니다.</p></div>
+<div class="card"><span class="num">02</span><strong>별의 탄생과 핵융합</strong><p>성운이 중력으로 수축해 별이 되고, 별 내부의 수소 핵융합으로 헬륨이 만들어집니다. 질량이 큰 별은 헬륨 이후 더 무거운 원소를 합성합니다.</p></div>
+<div class="card"><span class="num">03</span><strong>지구와 생명체 원소의 생성</strong><p>초신성 폭발·중성자별 병합 등에서 철보다 무거운 원소가 만들어져 퍼집니다. 지구 전체는 철, 산소, 규소, 마그네슘이 많고 사람은 산소, 탄소, 수소, 질소가 많습니다.</p></div>
+<div class="card"><span class="num">04</span><strong>태양계의 형성</strong><p>성운의 수축 → 원시 태양·원시 원반 → 미행성체 충돌 → 원시 행성의 순서로 태양계가 형성되었습니다.</p></div>
+<div class="card"><span class="num">05</span><strong>지구의 형성과 생명체의 출현</strong><p>미행성체 충돌로 마그마 바다가 생기고 핵·맨틀이 분리되었습니다. 냉각 후 원시 지각·바다가 만들어지고 바다에서 최초의 생명체가 출현했습니다.</p></div>
+<div class="card"><span class="num">CHECK</span><strong>시험 함정</strong><p>지구 전체의 원소 순위와 지각의 원소 순위를 구별하세요. 핵융합은 전자 이동이 아닌 원자핵 반응입니다.</p></div>
+</div><div class="notice"><b>연계 안내</b>이 단원은 중학 ‘원소·태양계’에서 고1 통합과학의 빅뱅·별의 진화로 확장되는 선행 범위입니다.</div></section>
+<section id="c2" class="panel"><div class="chapter-intro"><h2>물질의 규칙성과 성질</h2><p>원소의 주기성과 결합 방식이 물질의 성질과 전기적 활용으로 이어집니다.</p></div><div class="grid">
+<div class="card"><span class="num">01</span><strong>원소의 주기성</strong><p>원자 번호와 전자 배치에 따라 원소의 성질이 주기적으로 변합니다. 같은 족 원소는 최외각 전자 수가 비슷해 화학적 성질이 유사합니다.</p></div>
+<div class="card"><span class="num">02</span><strong>화학 결합과 물질의 성질</strong><p>이온 결합은 전자를 주고받고, 공유 결합은 전자쌍을 공유합니다. 결합과 입자 배열이 녹는점·전기 전도성·용해도에 영향을 줍니다.</p></div>
+<div class="card"><span class="num">03</span><strong>물질의 전기적 성질</strong><p>도체는 자유 전자가 많고, 부도체는 전자가 속박되어 있습니다. 반도체는 조건에 따라 전기 전도도가 달라져 센서·태양전지·전자소자에 쓰입니다.</p></div>
+<div class="card"><span class="num">04</span><strong>반도체 소자</strong><p>규소에 불순물을 넣어 n형·p형을 만들고, 다이오드는 한 방향 전류, LED는 발광, 트랜지스터는 증폭·스위치 기능을 합니다.</p></div>
+<div class="card"><span class="num">05</span><strong>전기 전도성 비교</strong><p>금속은 도체, 고무·유리·플라스틱은 부도체, 규소·저마늄은 대표적인 반도체입니다.</p></div>
+<div class="card"><span class="num">CHECK</span><strong>시험 함정</strong><p>전류가 ‘잘 흐르는 정도’와 전기 저항을 혼동하지 마세요. 반도체는 도체보다 전도도가 작고 부도체보다 큽니다.</p></div>
+</div></section>
+<section id="c3" class="panel"><div class="chapter-intro"><h2>역학 시스템</h2><p>중력, 운동량, 충격량을 이용해 물체의 운동과 충돌을 해석합니다.</p></div><div class="grid">
+<div class="card"><span class="num">01</span><strong>중력을 받는 물체의 운동</strong><p>자유 낙하와 포물선 운동에서 중력은 아래 방향으로 작용합니다. 공기 저항을 무시하면 같은 높이에서 떨어진 물체의 낙하 시간은 질량과 무관합니다.</p></div>
+<div class="card"><span class="num">02</span><strong>운동량</strong><p>운동량 p는 질량과 속도의 곱(p=mv)이며 방향을 갖는 물리량입니다. 외부 힘이 없으면 계의 운동량은 보존됩니다.</p></div>
+<div class="card"><span class="num">03</span><strong>충격량</strong><p>충격량 I는 힘과 작용 시간의 곱(I=FΔt)이고 운동량 변화량과 같습니다. 같은 충격량이라면 시간을 늘릴수록 평균 힘은 작아집니다.</p></div>
+<div class="card"><span class="num">04</span><strong>충돌과 안전장치</strong><p>에어백·범퍼·안전띠는 충돌 시간을 늘려 사람에게 전달되는 평균 힘을 줄입니다. 그래프에서 힘-시간 아래 넓이가 충격량입니다.</p></div>
+<div class="card"><span class="num">05</span><strong>힘과 운동 상태</strong><p>합력이 0이면 정지 또는 등속 직선 운동을 유지합니다. 속력이 일정한 원운동도 방향이 변하므로 합력이 0이 아닙니다.</p></div>
+<div class="card"><span class="num">CHECK</span><strong>시험 함정</strong><p>충격량은 그래프의 높이가 아니라 면적입니다. 힘이 작아도 작용 시간이 길면 같은 충격량이 될 수 있습니다.</p></div>
+</div></section>
+<section id="c4" class="panel"><div class="chapter-intro"><h2>화학 변화</h2><p>산화·환원과 산·염기의 반응, 화학 변화에서의 에너지 출입을 연결합니다.</p></div><div class="grid">
+<div class="card"><span class="num">01</span><strong>산화와 환원</strong><p>산화는 산소와 결합하거나 전자를 잃는 변화, 환원은 산소를 잃거나 전자를 얻는 변화입니다. 두 변화는 항상 함께 일어납니다.</p></div>
+<div class="card"><span class="num">02</span><strong>산과 염기</strong><p>산은 수용액에서 H⁺를, 염기는 OH⁻를 내놓습니다. 산은 푸른 리트머스를 붉게, 염기는 붉은 리트머스를 푸르게 합니다.</p></div>
+<div class="card"><span class="num">03</span><strong>중화 반응</strong><p>산과 염기가 반응해 물이 생성되는 반응입니다. H⁺와 OH⁻가 결합해 물이 되고, 중화가 진행될 때 중화열이 발생합니다.</p></div>
+<div class="card"><span class="num">04</span><strong>지시약과 pH</strong><p>페놀프탈레인·메틸 오렌지·BTB의 색 변화로 용액의 산성·중성·염기성을 구분합니다. 수소 이온이 많을수록 산성입니다.</p></div>
+<div class="card"><span class="num">05</span><strong>에너지의 출입</strong><p>발열 반응은 주변 온도를 높이고, 흡열 반응은 주변 온도를 낮춥니다. 연소·산화·중화는 대표적인 발열, 물의 기화·얼음의 융해는 흡열입니다.</p></div>
+<div class="card"><span class="num">CHECK</span><strong>시험 함정</strong><p>산화·환원과 산·염기 중화는 서로 다른 분류입니다. 물질 변화의 종류와 에너지 출입 방향을 따로 판단하세요.</p></div>
+</div></section>
+<section id="c5" class="panel"><div class="chapter-intro"><h2>에너지 전환과 활용</h2><p>태양 에너지에서 발전과 효율, 지속 가능한 신재생 에너지까지 살펴봅니다.</p></div><div class="grid">
+<div class="card"><span class="num">01</span><strong>태양 에너지의 생성과 전환</strong><p>태양은 수소 핵융합으로 에너지를 만들고, 그 에너지는 빛·열로 지구에 전달됩니다. 광합성은 빛에너지를 화학 에너지로 저장합니다.</p></div>
+<div class="card"><span class="num">02</span><strong>발전과 에너지원</strong><p>발전기는 전자기 유도로 운동 에너지를 전기 에너지로 바꿉니다. 화력·수력·풍력·태양광·원자력은 에너지 전환 방식과 환경 영향이 다릅니다.</p></div>
+<div class="card"><span class="num">03</span><strong>에너지 효율</strong><p>에너지 효율(%)=유용하게 사용된 에너지/공급한 에너지×100. 전환 과정에서 다시 쓰기 어려운 에너지로 일부가 흩어집니다.</p></div>
+<div class="card"><span class="num">04</span><strong>신에너지와 재생 에너지</strong><p>수소·연료전지는 신에너지, 태양광·태양열·풍력·수력·조력·파력·지열·바이오는 재생 에너지입니다.</p></div>
+<div class="card"><span class="num">05</span><strong>지속 가능한 발전</strong><p>재생 에너지는 자원 고갈과 온실 기체 배출을 줄일 수 있지만, 날씨·설치 공간·발전량 변동 같은 한계도 함께 고려해야 합니다.</p></div>
+<div class="card"><span class="num">CHECK</span><strong>시험 함정</strong><p>에너지 보존과 에너지 효율은 다릅니다. 에너지는 보존되지만 유용하게 쓸 수 있는 비율은 100%보다 작습니다.</p></div>
+</div></section>
+</main>
+<div class="two"><div class="box"><h3>빠른 복습 순서</h3><ul><li>핵심 카드에서 정의를 소리 내어 설명하기</li><li>‘시험 함정’ 한 줄을 가리고 다시 말하기</li><li>전체 대시보드에서 계산·탐구 문제 풀기</li></ul></div><div class="box"><h3>교육과정 안내</h3><p style="margin:0;color:var(--muted)">이 페이지는 중학 과학 개념을 바탕으로 한 <b>고등학교 1학년 통합과학 선행</b> 자료입니다. 학교 진도와 용어가 다르면 교과서 표현을 우선하세요.</p></div></div>
+<footer>Middle School Study · 통합과학 (물리·화학) · 복습 기록은 브라우저에 저장되지 않는 읽기용 요약 페이지입니다.</footer>
+</div>
+<script>
+document.addEventListener('click',e=>{const b=e.target.closest('[data-panel]');if(b){document.querySelectorAll('.chapter-nav button').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.panel').forEach(x=>x.classList.toggle('active',x.id===b.dataset.panel));window.scrollTo({top:document.querySelector('main').offsetTop-20,behavior:'smooth'})}if(e.target.id==='print'){window.print()}});
+</script>
+</body></html>
